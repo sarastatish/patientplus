@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <style>
+        h1{
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 80px;
+            text-shadow: 12px 9px 12px greenyellow;
+        }
+    </style>
+</head>
+<body>
+<h1>PatientPlus</h1>
+<a href="{% url 'about' %}">about</a>
+<a href="{% url 'contact' %}">contact</a>
+<a href="{% url 'services' %}">services</a>
+
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet blanditiis dignissimos dolorem doloribus eaque earum error esse eum explicabo facilis laborum, libero quidem, quod recusandae sed sint, tempore voluptate.</span><span>At, aut autem, consectetur et fuga ipsa itaque iure libero minus necessitatibus perferendis similique totam unde ut veniam. Animi aspernatur iusto minima voluptatum. Adipisci dolorem eum quibusdam, suscipit voluptas voluptatem!</span></p>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eaque maxime soluta. Ad consequatur deleniti deserunt dolores dolorum eos, hic incidunt iure iusto mollitia non placeat possimus soluta, veniam, voluptas?</span><span>Consectetur, cum enim fuga incidunt magnam nemo nesciunt quibusdam quidem saepe, similique soluta voluptatem! Alias at aut beatae hic labore minima minus mollitia nobis reprehenderit. Commodi illum porro ullam veritatis.</span><span>Amet architecto assumenda atque dolores, fugiat ipsa laboriosam natus optio quaerat quas recusandae sequi, similique soluta. Amet animi, architecto, autem ea inventore iste, iure laborum maxime nulla perferendis quo sunt.</span></p>
+<img src="{% static 'assets/hosi 1.jpeg' %}" alt="">
+<img src="{% static 'assets/hosi2.jpeg' %}" alt="">
+<img src="{% static 'assets/hosi3.jpeg' %}" alt="">
+<img src="{% static 'assets/hosi4.jpeg' %}" alt="">
+<img src="{% static 'assets/hosi5.jpeg' %}" alt="">
+
+</body>
+</html>
